@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body > div:first-of-type {
+    padding-top: 100px; /* Adjust this value to match the height of your navbar */
+}
+
+.navbar {
+    position: fixed; /* Ensure the navbar is fixed at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Make sure the navbar stays on top */
+}
+
+.first-paragraph {
+    font-size: 2em; /* Use em for responsive font size */
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 20px;
+    color: black;
+    padding-top: 20px; /* Optional: Add some padding to the first paragraph */
+}
+
+.red-txt {
+    font-size: 3em; /* Use em for responsive font size */
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.center-section {
+    margin: 20px;
+}
+
+.center-section p:first-of-type {
+    color: black;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.center-section p:nth-of-type(2) {
+    color: red;
+    margin: 10px 0;
+}
+
+/* Image Section */
+.image-section {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+/* Text Layout Below Image */
+.text-below-image {
+    display: flex;
+    flex-direction: column; /* Stacks on small screens */
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.text-below-image .text-left,
+.text-below-image .text-right {
+    width: 100%; /* Full width on small screens */
+}
+
+.text-right p {
+    margin: 5px 0;
+}
+
+/* Last Section */
+.last-section {
+    display: flex;
+    flex-direction: column-reverse; /* Stacks on small screens */
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.last-section img {
+    width: 100%; /* Full width on small screens */
+    height: auto;
+    margin-left: 0; /* Remove margin for smaller screens */
+}
+
+.last-section .text-content {
+    width: 100%; /* Full width on small screens */
+}
+
+.red-text {
+    color: red;
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .text-below-image {
+        flex-direction: row; /* Side by side on larger screens */
+    }
+
+    .text-below-image .text-left,
+    .text-below-image .text-right {
+        width: 50%; /* Half width on larger screens */
+    }
+
+    .last-section {
+        flex-direction: row; /* Side by side on larger screens */
+    }
+
+    .last-section img {
+        max-width: 50%; /* Half width on larger screens */
+        margin-left: 20px;
+    }
+
+    .last-section .text-content {
+        width: 50%; /* Half width on larger screens */
+    }
+}

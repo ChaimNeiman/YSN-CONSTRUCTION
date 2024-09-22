@@ -1,0 +1,672 @@
+/* General Reset and Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+p {
+    margin: 0;
+}
+
+/* Video Background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navbar Styles */
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    padding: 10px 0;
+    background-color: black;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.navbar-logo {
+    height: 70px;
+    margin-right: 20px;
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    border: 2px solid red;
+    padding: 0 20px;
+}
+
+.navbar-item {
+    margin: 0 10px;
+}
+
+.navbar-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: background-color 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: #575757;
+}
+
+.navbar-call {
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 2px solid red;
+    margin-left: 20px;
+}
+
+.navbar-call:hover {
+    background-color: #cc0000;
+}
+.content {
+    position: relative;
+    z-index: 1; /* Ensures the content is above the video */
+    margin-top: 100px; /* Adjust based on navbar height */
+    padding: 20px;
+    color: white; /* Ensure text is visible against the video background */
+    text-align: left; /* Align the text to the left */
+    margin-left: 20px; /* Adjust this value to move the <p> more to the left */
+}
+
+.headline {
+    font-size: 3em;
+    line-height: 1.2;
+    margin-top: 20%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.project-lnk,
+.contact-lnk {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from the link */
+    transition: background-color 0.3s;
+}
+
+.project-lnk a,
+.contact-lnk a {
+    color: inherit; /* Inherit the button's text color */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.project-lnk {
+    background-color: red;
+    color: white;
+    border: none;
+    margin-right: 10px;
+}
+
+.project-lnk:hover {
+    background-color: black;
+}
+
+.contact-lnk {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white; /* White border */
+}
+
+.contact-lnk:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* Main Section with Black Background */
+.content-section {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.highlight-text {
+    color: red;
+    font-size: 1.2em;
+}
+
+/* Box Styles */
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.box-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.Vision-section {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vision-text {
+    font-size: 3em; /* Adjust the font size for larger text */
+    color: black;
+    margin: 0;
+}
+
+.read-btn {
+    font-size: 1.5em; /* Adjust the font size for the button */
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.read-btn:hover {
+    background-color: black;
+}
+
+.read-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Service Section Styles */
+.service-section {
+    background-color: white;
+    padding: 20px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.service img {
+    width: 65%;
+    margin-right: 20px;
+}
+
+.service p {
+    width: 60%;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.service.alternate img {
+    margin-left: 20px;
+    order: 2;
+}
+
+.service.alternate p {
+    text-align: left;
+    order: 1;
+}
+
+.bold-ltr{
+    font-size:3em;
+    font-family: 'Georgia', serif;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the content */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Style for each block */
+.container div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.container p {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Contact Button Styles */
+.container button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.container button:hover {
+    background-color: darkred;
+}
+
+/* Link styles */
+.container a {
+    color: black;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+/* General Styles */
+.info-section {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    gap: 20px;
+}
+
+.info-section img {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+.info-box {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.info-box p,
+.info-box a {
+    margin: 5px 0;
+    color: black;
+}
+
+.contact-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background-color: darkred;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    position: relative;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-title {
+    font-size: 24px;
+    color: red;
+}
+
+.reach-out {
+    display: block;
+    color: red;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.contact-description {
+    color: black;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.contact-form {
+    width: 70%;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    width:75%;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    width: 48%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.message-box {
+    width: 75%;
+    margin-bottom: 15px;
+}
+
+.message-box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.send-message-btn {
+    background-color: red;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact-image {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    max-width: 500px;
+}
+/* Chatbot Icon */
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    cursor: pointer;
+}
+
+/* Chatbox Container */
+.chatbox {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* Chatbox Header */
+.chatbox-header {
+    background-color: red;
+    color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.chatbox-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.chatbox-subtitle {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Chatbox Body */
+.chatbox-body {
+    padding: 10px;
+    height: 350px;
+    overflow-y: auto;
+}
+
+/* Chatbox Footer */
+.chatbox-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.message-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.emoji-btn, .attach-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Display the chatbox when the icon is clicked */
+.chat-icon.active + .chatbox {
+    display: block;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+@media only screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar-list {
+        justify-content: center;
+        padding: 0;
+        border: none;
+    }
+
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .vision-text {
+        font-size: 2em;
+    }
+
+    .service p {
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    .service img {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* For Phones (Portrait) */
+@media only screen and (max-width: 480px) {
+    .headline {
+        font-size: 2em;
+        margin-top: 10%;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .boxes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .box {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .vision-text {
+        font-size: 1.5em;
+    }
+
+    .service img {
+        width: 100%;
+    }
+
+    .service p {
+        font-size: 0.9em;
+    }
+
+    .contact-btn {
+        width: 100%;
+    }
+
+    .chatbox {
+        width: 90%;
+        height: 70%;
+    }
+
+    .chatbox-footer {
+        flex-direction: column;
+    }
+
+    .message-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body > div:first-of-type {
+    padding-top: 70px; /* Adjust this value to match the height of your navbar */
+}
+
+/* Top Paragraph */
+.top-paragraph {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+/* Second Paragraph */
+.second-paragraph {
+    font-size: 2.5em;
+    font-weight: normal;
+    color: red;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
+/* Last Paragraph */
+.last-p {
+    font-family: serif;
+    font-weight: 300;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .top-paragraph {
+        font-size: 1.3em;
+    }
+
+    .second-paragraph {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 992px) {
+    .top-paragraph {
+        font-size: 1.2em;
+    }
+
+    .second-paragraph {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-paragraph {
+        font-size: 1.1em;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .second-paragraph {
+        font-size: 1.8em;
+        margin-left: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-paragraph {
+        font-size: 1em;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .second-paragraph {
+        font-size: 1.6em;
+        margin-left: 10px;
+        text-align: center;
+    }
+}

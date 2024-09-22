@@ -41,12 +41,4 @@ document.getElementById('closeModal').addEventListener('click', function() {
     document.getElementById('contactModal').style.display = 'none';
 });
 
-    // Toggle the menu and hamburger icon
-    const hamburger = document.getElementById('hamburger');
-    const navbarMenu = document.getElementById('navbarMenu');
-
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        navbarMenu.classList.toggle('active');
-    });
 
